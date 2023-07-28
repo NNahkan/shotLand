@@ -48,7 +48,7 @@ const Drinks = () => {
 				return (
 					<div>
 						<h2>{item.name}</h2>
-						<div>
+						<div style={{ textTransform: "capitalize" }}>
 							{liquorList.map((name) => <span>{name} : {item.liquors[name]}   </span>)}
 						</div>
 						<div>
