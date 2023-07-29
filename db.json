@@ -1,0 +1,34 @@
+{
+	"drinks": [
+		{
+			"name": "margarita",
+			"liquors": {
+				"tequila": "1.5oz",
+				"tripleSec": "1oz"
+			},
+			"juices": {
+				"margaritaMix": "4oz",
+				"sour": "2oz"
+			},
+			"garnish": [
+				"lime",
+				"lemon"
+			]
+		},
+		{
+			"name": "margarita",
+			"liquors": {
+				"tequila": "1.5oz",
+				"tripleSec": "1oz"
+			},
+			"juices": {
+				"margaritaMix": "4oz",
+				"sour": "2oz"
+			},
+			"garnish": [
+				"lime",
+				"lemon"
+			]
+		}
+	]
+}
