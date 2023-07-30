@@ -1,6 +1,7 @@
 {
 	"drinks": [
 		{
+			"id" : 1,
 			"name": "margarita",
 			"liquors": {
 				"tequila": "1.5oz",
@@ -16,6 +17,7 @@
 			]
 		},
 		{
+			"id" : 2,
 			"name": "margarita",
 			"liquors": {
 				"tequila": "1.5oz",

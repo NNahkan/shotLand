@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import { getAllDrinks } from '../service.js'
+import { drink } from '../model.js'
 
 
-const Drinks = () => {
-	const [data, setData] = useState(null)
+const Drinks: React.FC = () => {
+	const [data, setData] = useState<drink[]>([])
 
 	useEffect(() => {
 		getAllDrinks().then(setData)
 	}, [])
+
 
 
 	return (
@@ -18,7 +20,7 @@ const Drinks = () => {
 					const juiceList = Object.keys(item.juices);
 					return (
 						<div>
-							<h2>{item.name}</h2>
+							<h2>{item.name} == {item.id}</h2>
 							<div style={{ textTransform: "capitalize" }}>
 								{liquorList.map((name) => <span>{name} : {item.liquors[name]}   </span>)}
 							</div>
@@ -30,7 +32,8 @@ const Drinks = () => {
 							</div>
 						</div>
 					)
-				})}</>
+				})}
+			</>
 		)
 	)
 }
