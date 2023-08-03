@@ -1,5 +1,6 @@
 import React from 'react'
 import { drink } from '../model';
+import "./styles.css"
 
 interface SingleDrinkProps {
 	item: drink;
@@ -12,7 +13,7 @@ const SingleDrink: React.FC<SingleDrinkProps> = ({ item }) => {
 	const juiceList = Object.keys(item.juices);
 
 	return (
-		<div>
+		<div className='drinkMain'>
 			<h2>{item.name} == {item.id}</h2>
 			<div style={{ textTransform: "capitalize" }}>
 				{liquorList.map((name) => <span>{name} : {item.liquors[name]}   </span>)}
