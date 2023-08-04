@@ -17,11 +17,11 @@ const Drinks: React.FC = () => {
 	return (
 
 		data && (
-			<>
+			<div className='drinks-Wrapper'>
 				{data.map((item) =>
 					<SingleDrink key={item.name} item={item} />
 				)}
-			</>
+			</div>
 
 
 		))
