@@ -1,7 +1,7 @@
 {
 	"drinks": [
 		{
-			"id" : 1,
+			"id": 1,
 			"name": "margarita",
 			"liquors": {
 				"tequila": "1.5oz",
@@ -17,11 +17,11 @@
 			]
 		},
 		{
-			"id" : 2,
-			"name": "margarita",
+			"id": 2,
+			"name": "Sex on the beach",
 			"liquors": {
-				"tequila": "1.5oz",
-				"tripleSec": "1oz"
+				"vodka": "1.5oz",
+				"peach schnapps": "1oz"
 			},
 			"juices": {
 				"margaritaMix": "4oz",

@@ -1,13 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import SearchAndFilter from './SearchAndFilter'
 import Drinks from './Drinks'
 import ModalUp from './ModalUp'
 
-const Home = () => {
+const Home: React.FC = () => {
+	const [searchWord, setSearchWord] = useState<string>("")
 	return (
 		<div>
-			<SearchAndFilter />
-			<Drinks />
+			<SearchAndFilter searchWord={searchWord} setSearchWord={setSearchWord} />
+			<Drinks searchWord={searchWord} />
 		</div>
 	)
 }
