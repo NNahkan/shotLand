@@ -1,3 +1,13 @@
+/* SearchAndFilters */
+
+.quick-btn {
+	padding: 8px 20px;
+	background-color: yellow;
+	color: black;
+	font-size: 18px;
+	margin: 5px;
+}
+
 /* Drinks */
 
 .drinks-Wrapper {
