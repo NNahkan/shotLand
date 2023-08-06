@@ -9,22 +9,36 @@ interface DrinksProps {
 
 
 const Drinks: React.FC<DrinksProps> = ({ searchWord }) => {
+	const lowerSearchWord = searchWord.toLowerCase();
+
+
 	const [data, setData] = useState<drink[]>([])
 
 	useEffect(() => {
 		getAllDrinks().then(setData)
 	}, [])
 
-	const filteredDrinks = data.filter((drink) =>
-    drink.name.toLowerCase().includes(searchWord.toLowerCase())
-  );
+	const filteredDrinks = data.filter((drink) => {
+		const lowerDrinkName = drink.name.toLowerCase();
 
+		return (
+			lowerDrinkName.includes(lowerSearchWord)
+			||
+			Object.keys(drink.liquors).some(
+				(liquor) => liquor.toLowerCase().includes(lowerSearchWord)
+			)
+			||
+			Object.keys(drink.juices).some(
+				(juice) => juice.toLowerCase().includes(lowerSearchWord)
+			)
+		)
+	}
+	)
 
 	return (
 
 		data && (
 			<div className='drinks-Wrapper'>
-				<div>{searchWord}</div>
 				{filteredDrinks.map((item) =>
 					<SingleDrink key={item.name} item={item} />
 				)}
