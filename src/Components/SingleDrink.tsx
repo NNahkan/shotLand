@@ -24,11 +24,9 @@ const SingleDrink: React.FC<SingleDrinkProps> = ({ item }) => {
 				<div>
 					{juiceList.map((name) => <span>{name} : {item.juices[name]}   </span>)}
 				</div>
-				<div>
-					Garnish : {item.garnish.join(" , ")}
-				</div>
+
 			</div >
-			{openModel && <ModalUp name={item.name} closeModel={setOpenModel} />
+			{openModel && <ModalUp item={item} closeModel={setOpenModel} />
 			}
 		</>
 	)

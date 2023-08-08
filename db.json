@@ -14,7 +14,8 @@
 			"garnish": [
 				"lime",
 				"lemon"
-			]
+			],
+			"description": "Prepare a Margarita by rimming a glass with salt, shaking tequila, fresh lime juice, triple sec, and simple syrup with ice, straining it into the glass, and garnishing with a lime wedge before enjoying responsibly."
 		},
 		{
 			"id": 2,
@@ -30,7 +31,8 @@
 			"garnish": [
 				"lime",
 				"lemon"
-			]
+			],
+			"description": "Mix vodka, peach schnapps, cranberry juice, and orange juice in a shaker, strain into a glass over ice, garnish with an orange slice, and enjoy responsibly."
 		}
 	]
 }
