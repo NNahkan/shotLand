@@ -5,7 +5,7 @@ interface SearchProps {
 	setSearchWord: React.Dispatch<React.SetStateAction<string>>
 }
 
-const data = ["vodka", "gin", "tequila", "whiskey", "something"]
+const data = ["vodka", "gin", "tequila", "whiskey", "shot"]
 
 const SearchAndFilter: React.FC<SearchProps> = ({ searchWord, setSearchWord }) => {
 	return (

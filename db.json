@@ -2,6 +2,7 @@
 	"drinks": [
 		{
 			"id": 1,
+			"type": "cocktail",
 			"name": "margarita",
 			"liquors": {
 				"tequila": "1.5oz",
@@ -20,6 +21,7 @@
 		{
 			"id": 2,
 			"name": "Sex on the beach",
+			"type": "cocktail",
 			"liquors": {
 				"vodka": "1.5oz",
 				"peach schnapps": "1oz"
@@ -33,6 +35,23 @@
 				"lemon"
 			],
 			"description": "Mix vodka, peach schnapps, cranberry juice, and orange juice in a shaker, strain into a glass over ice, garnish with an orange slice, and enjoy responsibly."
+		},
+		{
+			"id": 3,
+			"name": "Scooby Snack Shot",
+			"type": "shot",
+			"liquors": {
+				"Coconut Rum": "1/2 oz",
+				"Melon Liqueur": "1/2 oz"
+			},
+			"juices": {
+				"Pineapple": "1/2 oz"
+			},
+			"garnish": [
+				"Whipped Cream",
+				"Coconut Flakes"
+			],
+			"description": "Combine Coconut Rum, Melon Liqueur, and Pineapple juice in a shaker with ice. Shake well and strain into a shot glass. Top with a dollop of Whipped Cream and sprinkle Coconut Flakes on top. Enjoy responsibly."
 		}
 	]
 }

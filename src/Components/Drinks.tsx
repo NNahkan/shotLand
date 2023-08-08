@@ -20,6 +20,7 @@ const Drinks: React.FC<DrinksProps> = ({ searchWord }) => {
 
 	const filteredDrinks = data.filter((drink) => {
 		const lowerDrinkName = drink.name.toLowerCase();
+		const typeDrink = drink.type;
 
 		return (
 			lowerDrinkName.includes(lowerSearchWord)
@@ -31,6 +32,8 @@ const Drinks: React.FC<DrinksProps> = ({ searchWord }) => {
 			Object.keys(drink.juices).some(
 				(juice) => juice.toLowerCase().includes(lowerSearchWord)
 			)
+			||
+			typeDrink.includes(lowerSearchWord)
 		)
 	}
 	)
