@@ -5,10 +5,11 @@ import ModalUp from './ModalUp'
 
 const Home: React.FC = () => {
 	const [searchWord, setSearchWord] = useState<string>("")
+	const [mainFilter, setMainFilter] = useState<string>("")
 	return (
 		<div>
-			<SearchAndFilter searchWord={searchWord} setSearchWord={setSearchWord} />
-			<Drinks searchWord={searchWord} />
+			<SearchAndFilter setMainFilter={setMainFilter} searchWord={searchWord} setSearchWord={setSearchWord} />
+			<Drinks mainFilter={mainFilter} searchWord={searchWord} />
 		</div>
 	)
 }

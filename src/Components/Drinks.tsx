@@ -5,10 +5,11 @@ import SingleDrink from './SingleDrink'
 
 interface DrinksProps {
 	searchWord: string;
+	mainFilter: string;
 }
 
 
-const Drinks: React.FC<DrinksProps> = ({ searchWord }) => {
+const Drinks: React.FC<DrinksProps> = ({ mainFilter, searchWord }) => {
 	const lowerSearchWord = searchWord.toLowerCase();
 
 
@@ -23,17 +24,19 @@ const Drinks: React.FC<DrinksProps> = ({ searchWord }) => {
 		const typeDrink = drink.type;
 
 		return (
-			lowerDrinkName.includes(lowerSearchWord)
-			||
-			Object.keys(drink.liquors).some(
-				(liquor) => liquor.toLowerCase().includes(lowerSearchWord)
+			typeDrink.includes(mainFilter)
+			&& (
+				lowerDrinkName.includes(lowerSearchWord)
+				||
+				Object.keys(drink.liquors).some(
+					(liquor) => liquor.toLowerCase().includes(lowerSearchWord)
+				)
+				||
+				Object.keys(drink.juices).some(
+					(juice) => juice.toLowerCase().includes(lowerSearchWord)
+				)
+
 			)
-			||
-			Object.keys(drink.juices).some(
-				(juice) => juice.toLowerCase().includes(lowerSearchWord)
-			)
-			||
-			typeDrink.includes(lowerSearchWord)
 		)
 	}
 	)

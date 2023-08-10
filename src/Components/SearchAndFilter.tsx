@@ -3,16 +3,28 @@ import React from 'react'
 interface SearchProps {
 	searchWord: string;
 	setSearchWord: React.Dispatch<React.SetStateAction<string>>
+	setMainFilter: React.Dispatch<React.SetStateAction<string>>
 }
+const mainFilter = ["shot", "cocktail", "special"]
+const filterDrink = ["vodka", "gin", "tequila", "whiskey", "liquor"]
 
-const data = ["vodka", "gin", "tequila", "whiskey", "shot"]
+const SearchAndFilter: React.FC<SearchProps> = ({ setMainFilter, searchWord, setSearchWord }) => {
 
-const SearchAndFilter: React.FC<SearchProps> = ({ searchWord, setSearchWord }) => {
+
+
 	return (
 		<div>
 			<input value={searchWord} onChange={(e) => setSearchWord(e.target.value)} type="text" />
 			<br />
-			{data.map((item) =>
+			{mainFilter.map((item) =>
+				<button
+					className='quick-btn'
+					onClick={() => setMainFilter((prev) => item === prev ? "" : item)}>
+					{item}
+				</button>
+			)}
+			<br />
+			{filterDrink.map((item) =>
 				<button className='quick-btn' onClick={() => setSearchWord(item)}>{item}</button>
 			)}
 		</div>
