@@ -1,5 +1,17 @@
 /* SearchAndFilters */
 
+.search-wrapper {
+	display: flex;
+}
+
+.mainFilter-wrapper {
+	display: flex;
+}
+
+.filterDrink-wrapper {
+	display: flex;
+}
+
 .quick-btn {
   padding: 8px 20px;
   background-color: yellow;

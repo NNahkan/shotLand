@@ -13,20 +13,22 @@ const SearchAndFilter: React.FC<SearchProps> = ({ setMainFilter, searchWord, set
 
 
 	return (
-		<div>
+		<div className='search-wrapper'>
 			<input value={searchWord} onChange={(e) => setSearchWord(e.target.value)} type="text" />
-			<br />
-			{mainFilter.map((item) =>
-				<button
-					className='quick-btn'
-					onClick={() => setMainFilter((prev) => item === prev ? "" : item)}>
-					{item}
-				</button>
-			)}
-			<br />
-			{filterDrink.map((item) =>
-				<button className='quick-btn' onClick={() => setSearchWord(item)}>{item}</button>
-			)}
+			<div className='mainFilter-wrapper'>
+				{mainFilter.map((item) =>
+					<button
+						className='quick-btn'
+						onClick={() => setMainFilter((prev) => item === prev ? "" : item)}>
+						{item}
+					</button>
+				)}
+			</div>
+			<div className='filterDrink-wrapper'>
+				{filterDrink.map((item) =>
+					<button className='quick-btn' onClick={() => setSearchWord(item)}>{item}</button>
+				)}
+			</div>
 		</div>
 	)
 }
