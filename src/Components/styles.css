@@ -1,15 +1,18 @@
 /* SearchAndFilters */
 
 .search-wrapper {
-	display: flex;
+  display: flex;
+  flex-direction: column;
 }
 
 .mainFilter-wrapper {
-	display: flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .filterDrink-wrapper {
-	display: flex;
+  display: flex;
 }
 
 .quick-btn {
