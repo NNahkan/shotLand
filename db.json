@@ -52,6 +52,54 @@
 				"Coconut Flakes"
 			],
 			"description": "Combine Coconut Rum, Melon Liqueur, and Pineapple juice in a shaker with ice. Shake well and strain into a shot glass. Top with a dollop of Whipped Cream and sprinkle Coconut Flakes on top. Enjoy responsibly."
-		}
+		},
+		{
+			"id": 4,
+			"type": "cocktail",
+			"name": "mojito",
+			"liquors": {
+				"whiteRum": "2oz"
+			},
+			"juices": {
+				"lime": "1oz",
+				"simpleSyrup": "0.5oz"
+			},
+			"others": {
+				"mintLeaves": "8-10",
+				"clubSoda": "2oz"
+			},
+			"description": "To make a Mojito, muddle mint leaves and simple syrup in a glass, add lime juice and rum, fill with ice, and top with club soda. Stir gently and garnish with a mint sprig."
+		},
+		{
+			"id": 5,
+			"type": "cocktail",
+			"name": "cosmopolitan",
+			"liquors": {
+				"vodka": "1.5oz",
+				"tripleSec": "1oz"
+			},
+			"juices": {
+				"cranberry": "1oz",
+				"lime": "0.5oz"
+			},
+			"description": "Mix vodka, triple sec, cranberry juice, and fresh lime juice in a shaker with ice. Shake well and strain into a chilled cocktail glass. Garnish with a lime twist to enjoy a Cosmopolitan."
+		},
+		{
+			"id": 6,
+			"type": "cocktail",
+			"name": "old fashioned",
+			"liquors": {
+				"bourbon": "2oz"
+			},
+			"others": {
+				"sugarCube": "1",
+				"angosturaBitters": "2 dashes"
+			},
+			"garnish": [
+				"orange twist",
+				"cherry"
+			],
+			"description": "Muddle the sugar cube and bitters in a glass. Add bourbon and ice, then stir until well chilled. Garnish with an orange twist and cherry to enjoy a classic Old Fashioned."
+		},
 	]
 }
