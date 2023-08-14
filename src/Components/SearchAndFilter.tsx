@@ -14,7 +14,12 @@ const SearchAndFilter: React.FC<SearchProps> = ({ setMainFilter, searchWord, set
 
 	return (
 		<div className='search-wrapper'>
-			<input value={searchWord} onChange={(e) => setSearchWord(e.target.value)} type="text" />
+			<input
+				className='search-input'
+				placeholder='Search for Trouble'
+				value={searchWord}
+				onChange={(e) => setSearchWord(e.target.value)} type="text"
+			/>
 			<div className='mainFilter-wrapper'>
 				{mainFilter.map((item) =>
 					<button

@@ -5,14 +5,37 @@
   flex-direction: column;
 }
 
+.search-input {
+  width: 50%;
+  color: white;
+  font-size: 1.2rem;
+  padding: 1rem 0.5rem;
+  text-align: center;
+  align-self: center;
+}
+
+.search-input::placeholder {
+  color: white;
+}
+
 .mainFilter-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  margin: 2rem 0;
+}
+
+.mainFilter-wrapper > button {
+  min-width: 9rem;
 }
 
 .filterDrink-wrapper {
   display: flex;
+  justify-content: space-evenly;
+}
+
+.filterDrink-wrapper > button {
+  min-width: 10rem;
 }
 
 .quick-btn {
@@ -27,7 +50,11 @@
 
 .drinks-Wrapper {
   display: flex;
+  flex-wrap: wrap;
   background-color: #a2d2ff;
+  justify-content: center;
+  padding: 2rem 0;
+  margin-top: 2rem;
 }
 
 /* SingleDrink */
@@ -40,6 +67,7 @@
   font-size: 1.2rem;
   background-color: #cdb4db;
   color: white;
+  width: 25%;
 }
 
 /* modalUp */

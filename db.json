@@ -64,7 +64,7 @@
 				"lime": "1oz",
 				"simpleSyrup": "0.5oz"
 			},
-			"others": {
+			"juieces": {
 				"mintLeaves": "8-10",
 				"clubSoda": "2oz"
 			},
@@ -91,7 +91,7 @@
 			"liquors": {
 				"bourbon": "2oz"
 			},
-			"others": {
+			"juices": {
 				"sugarCube": "1",
 				"angosturaBitters": "2 dashes"
 			},
@@ -100,6 +100,6 @@
 				"cherry"
 			],
 			"description": "Muddle the sugar cube and bitters in a glass. Add bourbon and ice, then stir until well chilled. Garnish with an orange twist and cherry to enjoy a classic Old Fashioned."
-		},
+		}
 	]
 }
