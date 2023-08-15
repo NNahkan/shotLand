@@ -18,6 +18,7 @@ const ModalUp: React.FC<ModalUpProps> = ({ item, closeModel }) => {
 	return (
 		<div className='overlay' onClick={(e) => closeWindow(e)}>
 			<div className="modalContainer">
+			<span onClick={() => closeModel(false)} className='close-btn'>X</span>
 				<h1>{name}</h1>
 				<div className='modal-flex'>
 					<div className='temporaryBox'>image of the drink</div>

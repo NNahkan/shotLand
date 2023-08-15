@@ -71,6 +71,7 @@
   background-color: #cdb4db;
   color: white;
   width: 25%;
+  cursor: pointer;
 }
 
 /* modalUp */
@@ -88,12 +89,37 @@
 }
 
 .modalContainer {
+  position: relative;
   background-color: #8f2424;
+  font-size: 20px;
   width: 70%;
   height: 70%;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.modalContainer > h1 {
+	text-transform: uppercase ;
+	font-style: italic;
+	letter-spacing: 1.5px;
+
+}
+
+.close-btn {
+  position: absolute;
+  font-size: 1.3rem;
+  right: 0;
+  top: 0;
+  padding: 1rem 1.2rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.close-btn:hover {
+transform: scale(1.5) rotate(90deg);
+font-weight: 900;
+  color: black;
 }
 
 .modal-flex {
@@ -109,14 +135,13 @@
   background-color: black;
   flex: 1;
 }
- 
 
 .modal-info {
   display: flex;
   flex: 2;
   margin-left: 2rem;
   flex-direction: column;
- }
+}
 
 .model-howTo {
- }
+}
