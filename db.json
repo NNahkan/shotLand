@@ -100,6 +100,103 @@
 				"cherry"
 			],
 			"description": "Muddle the sugar cube and bitters in a glass. Add bourbon and ice, then stir until well chilled. Garnish with an orange twist and cherry to enjoy a classic Old Fashioned."
+		},
+		{
+			"id": 1,
+			"type": "cocktail",
+			"name": "margarita",
+			"liquors": {
+				"tequila": "1.5oz",
+				"tripleSec": "1oz"
+			},
+			"juices": {
+				"margaritaMix": "4oz",
+				"sour": "2oz"
+			},
+			"garnish": [
+				"lime",
+				"lemon"
+			],
+			"description": "Prepare a Margarita by rimming a glass with salt, shaking tequila, fresh lime juice, triple sec, and simple syrup with ice, straining it into the glass, and garnishing with a lime wedge before enjoying responsibly."
+		},
+		{
+			"id": 2,
+			"name": "Sex on the beach",
+			"type": "cocktail",
+			"liquors": {
+				"vodka": "1.5oz",
+				"peach schnapps": "1oz"
+			},
+			"juices": {
+				"orange": "4oz",
+				"cranberry": "2oz"
+			},
+			"garnish": [
+				"lime",
+				"lemon"
+			],
+			"description": "Mix vodka, peach schnapps, cranberry juice, and orange juice in a shaker, strain into a glass over ice, garnish with an orange slice, and enjoy responsibly."
+		},
+		{
+			"id": 3,
+			"name": "Scooby Snack Shot",
+			"type": "shot",
+			"liquors": {
+				"Coconut Rum": "1/2 oz",
+				"Melon Liqueur": "1/2 oz"
+			},
+			"juices": {
+				"Pineapple": "1/2 oz"
+			},
+			"garnish": [
+				"Whipped Cream",
+				"Coconut Flakes"
+			],
+			"description": "Combine Coconut Rum, Melon Liqueur, and Pineapple juice in a shaker with ice. Shake well and strain into a shot glass. Top with a dollop of Whipped Cream and sprinkle Coconut Flakes on top. Enjoy responsibly."
+		},
+		{
+			"id": 4,
+			"type": "cocktail",
+			"name": "mojito",
+			"liquors": {
+				"whiteRum": "2oz"
+			},
+			"juices": {
+				"lime": "1oz",
+				"simpleSyrup": "0.5oz"
+			},
+			"description": "To make a Mojito, muddle mint leaves and simple syrup in a glass, add lime juice and rum, fill with ice, and top with club soda. Stir gently and garnish with a mint sprig."
+		},
+		{
+			"id": 5,
+			"type": "cocktail",
+			"name": "cosmopolitan",
+			"liquors": {
+				"vodka": "1.5oz",
+				"tripleSec": "1oz"
+			},
+			"juices": {
+				"cranberry": "1oz",
+				"lime": "0.5oz"
+			},
+			"description": "Mix vodka, triple sec, cranberry juice, and fresh lime juice in a shaker with ice. Shake well and strain into a chilled cocktail glass. Garnish with a lime twist to enjoy a Cosmopolitan."
+		},
+		{
+			"id": 6,
+			"type": "cocktail",
+			"name": "old fashioned",
+			"liquors": {
+				"bourbon": "2oz"
+			},
+			"juices": {
+				"sugarCube": "1",
+				"angosturaBitters": "2 dashes"
+			},
+			"garnish": [
+				"orange twist",
+				"cherry"
+			],
+			"description": "Muddle the sugar cube and bitters in a glass. Add bourbon and ice, then stir until well chilled. Garnish with an orange twist and cherry to enjoy a classic Old Fashioned."
 		}
 	]
 }

@@ -22,21 +22,22 @@ const ModalUp: React.FC<ModalUpProps> = ({ item, closeModel }) => {
 				<div className='modal-flex'>
 					<div className='temporaryBox'>image of the drink</div>
 					<div className='modal-info'>
-						<div>
-							<div>
-								{liquorsName.map((liquor) =>
-									<li>{liquor} : {liquors[liquor]}</li>
-								)}
-							</div>
-							<div>
-								{juicesName.map((juice) =>
-									<li>{juice} : {juices[juice]}</li>
-								)}
-							</div>
-							<div>
-								Garnish : {garnish.join(" , ")}
-							</div>
+						<div className='modal-ingredients'>
+							{liquorsName.map((liquor) =>
+								<li>{liquors[liquor]} : {liquor} </li>
+							)}
+							{juicesName.map((juice) =>
+								<li>{juices[juice]} : {juice} </li>
+							)}
+						</div>
+						<br />
+						<div className="modal-howTo">
 							<div>{description}</div>
+							{garnish && (
+								<div>
+									Garnish : {garnish.join(" , ")}
+								</div>
+							)}
 						</div>
 					</div>
 				</div>
