@@ -4,8 +4,8 @@ import Drinks from './Drinks'
 import ModalUp from './ModalUp'
 
 const Home: React.FC = () => {
-	const [searchWord, setSearchWord] = useState<string>("")
 	const [mainFilter, setMainFilter] = useState<string>("")
+	const [searchWord, setSearchWord] = useState<string>("")
 	return (
 		<div>
 			<SearchAndFilter setMainFilter={setMainFilter} searchWord={searchWord} setSearchWord={setSearchWord} />

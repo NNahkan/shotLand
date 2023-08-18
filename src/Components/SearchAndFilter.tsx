@@ -2,11 +2,11 @@ import React from 'react'
 
 interface SearchProps {
 	searchWord: string;
-	setSearchWord: React.Dispatch<React.SetStateAction<string>>
 	setMainFilter: React.Dispatch<React.SetStateAction<string>>
+	setSearchWord: React.Dispatch<React.SetStateAction<string>>
 }
-const mainFilter = ["shot", "cocktail", "special"]
 const filterDrink = ["vodka", "gin", "tequila", "whiskey", "liquor"]
+const mainFilter = ["shot", "cocktail", "special"]
 
 const SearchAndFilter: React.FC<SearchProps> = ({ setMainFilter, searchWord, setSearchWord }) => {
 

@@ -13,8 +13,8 @@ const ModalUp: React.FC<ModalUpProps> = ({ item, closeModel }) => {
 	}
 
 	const { name, liquors, juices, garnish, description } = item;
-	const liquorsName = Object.keys(liquors)
 	const juicesName = Object.keys(juices)
+	const liquorsName = Object.keys(liquors)
 	return (
 		<div className='overlay' onClick={(e) => closeWindow(e)}>
 			<div className="modalContainer">

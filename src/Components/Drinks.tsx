@@ -4,8 +4,8 @@ import { drink } from '../model.js'
 import SingleDrink from './SingleDrink'
 
 interface DrinksProps {
-	searchWord: string;
 	mainFilter: string;
+	searchWord: string;
 }
 
 
