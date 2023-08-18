@@ -13,6 +13,7 @@ const SingleDrink: React.FC<SingleDrinkProps> = ({ item }) => {
 	const [openModel, setOpenModel] = useState<boolean>(false)
 	const juiceList = Object.keys(item.juices);
 	const liquorList = Object.keys(item.liquors);
+	const otherList = item.other && Object.keys(item.other)
 
 	return (
 		<>
@@ -24,9 +25,18 @@ const SingleDrink: React.FC<SingleDrinkProps> = ({ item }) => {
 				<div>
 					{juiceList.map((name) => <span>{name} : {item.juices[name]}   </span>)}
 				</div>
+				{item.other && <div>
+					{otherList.map((name) => <span>{name} : {item.other[name]}   </span>)}
+				</div>}
 
 			</div >
-			{openModel && <ModalUp item={item} closeModel={setOpenModel} />
+			{openModel && <ModalUp
+				liquorList={liquorList}
+				juiceList={juiceList}
+				openModel={openModel}
+				otherList={otherList}
+				item={item}
+				closeModel={setOpenModel} />
 			}
 		</>
 	)

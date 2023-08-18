@@ -4,6 +4,7 @@ export interface drink {
 	name: string;
 	liquors: Record<string, string>;
 	juices: Record<string, string>;
+	other?: Record<string, string>;
 	garnish: string[];
 	description: string;
 }

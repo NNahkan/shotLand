@@ -15,7 +15,7 @@
 }
 
 .search-input::placeholder {
-  color: white;
+  color: gray;
 }
 
 .mainFilter-wrapper {
@@ -99,11 +99,14 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.modalContainer > h1 {
-	text-transform: uppercase ;
-	font-style: italic;
-	letter-spacing: 1.5px;
+.modalContainer.isOpen {
+  opacity: 1;
+}
 
+.modalContainer > h1 {
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 1.5px;
 }
 
 .close-btn {
@@ -117,8 +120,8 @@
 }
 
 .close-btn:hover {
-transform: scale(1.5) rotate(90deg);
-font-weight: 900;
+  transform: scale(1.5) rotate(90deg);
+  font-weight: 900;
   color: black;
 }
 
