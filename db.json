@@ -1,78 +1,146 @@
 {
-	"drinks": [
-		{
-			"id": 1,
-			"type": "cocktail",
-			"name": "margarita",
-			"liquors": {
-				"tequila": "1.5oz",
-				"tripleSec": "1oz"
-			},
-			"juices": {
-				"margaritaMix": "4oz",
-				"sour": "2oz"
-			},
-			"garnish": [
-				"lime",
-				"lemon"
-			],
-			"description": "Prepare a Margarita by rimming a glass with salt, shaking tequila, fresh lime juice, triple sec, and simple syrup with ice, straining it into the glass, and garnishing with a lime wedge before enjoying responsibly."
-		},
-		{
-			"id": 2,
-			"name": "Sex on the beach",
-			"type": "cocktail",
-			"liquors": {
-				"vodka": "1.5oz",
-				"peach schnapps": "1oz"
-			},
-			"juices": {
-				"orange": "4oz",
-				"cranberry": "2oz"
-			},
-			"garnish": [
-				"lime",
-				"lemon"
-			],
-			"description": "Mix vodka, peach schnapps, cranberry juice, and orange juice in a shaker, strain into a glass over ice, garnish with an orange slice, and enjoy responsibly."
-		},
-		{
-			"id": 3,
-			"name": "Scooby Snack Shot",
-			"type": "shot",
-			"liquors": {
-				"Coconut Rum": "1/2 oz",
-				"Melon Liqueur": "1/2 oz"
-			},
-			"juices": {
-				"Pineapple": "1/2 oz"
-			},
-			"garnish": [
-				"Whipped Cream",
-				"Coconut Flakes"
-			],
-			"description": "Combine Coconut Rum, Melon Liqueur, and Pineapple juice in a shaker with ice. Shake well and strain into a shot glass. Top with a dollop of Whipped Cream and sprinkle Coconut Flakes on top. Enjoy responsibly."
-		},
-		{
-			"id": 4,
-			"name": "Mojito",
-			"type": "cocktail",
-			"liquors": {
-			  "white rum": "2 oz"
-			},
-			"juices": {
-			  "lime": "1 oz"
-			},
-			"other": {
-			  "fresh mint leaves": "6-8 leaves",
-			  "simple syrup": "1 oz",
-			  "club soda": "2 oz"
-			},
-			"garnish": [
-			  "lime wedge",
-			  "mint sprig"
-			],
-			"description": "Muddle fresh mint leaves and simple syrup in a glass. Add lime juice and white rum. Fill the glass with ice and top with club soda. Garnish with a lime wedge and a sprig of mint. Stir and enjoy."
-		 }
-	]
+  "drinks": [
+    {
+      "id": 1,
+      "type": "cocktail",
+      "name": "margarita",
+      "liquors": {
+        "tequila": "1.5oz",
+        "tripleSec": "1oz"
+      },
+      "juices": {
+        "margaritaMix": "4oz",
+        "sour": "2oz"
+      },
+      "garnish": [
+        "lime",
+        "lemon"
+      ],
+      "description": "Prepare a Margarita by rimming a glass with salt, shaking tequila, fresh lime juice, triple sec, and simple syrup with ice, straining it into the glass, and garnishing with a lime wedge before enjoying responsibly."
+    },
+    {
+      "id": 2,
+      "name": "Sex on the beach",
+      "type": "cocktail",
+      "liquors": {
+        "vodka": "1.5oz",
+        "peach schnapps": "1oz"
+      },
+      "juices": {
+        "orange": "4oz",
+        "cranberry": "2oz"
+      },
+      "garnish": [
+        "lime",
+        "lemon"
+      ],
+      "description": "Mix vodka, peach schnapps, cranberry juice, and orange juice in a shaker, strain into a glass over ice, garnish with an orange slice, and enjoy responsibly."
+    },
+    {
+      "id": 3,
+      "name": "Scooby Snack Shot",
+      "type": "shot",
+      "liquors": {
+        "Coconut Rum": "1/2 oz",
+        "Melon Liqueur": "1/2 oz"
+      },
+      "juices": {
+        "Pineapple": "1/2 oz"
+      },
+      "garnish": [
+        "Whipped Cream",
+        "Coconut Flakes"
+      ],
+      "description": "Combine Coconut Rum, Melon Liqueur, and Pineapple juice in a shaker with ice. Shake well and strain into a shot glass. Top with a dollop of Whipped Cream and sprinkle Coconut Flakes on top. Enjoy responsibly."
+    },
+    {
+      "id": 4,
+      "name": "Mojito",
+      "type": "cocktail",
+      "liquors": {
+        "white rum": "2 oz"
+      },
+      "juices": {
+        "lime": "1 oz"
+      },
+      "other": {
+        "fresh mint leaves": "6-8 leaves",
+        "simple syrup": "1 oz",
+        "club soda": "2 oz"
+      },
+      "garnish": [
+        "lime wedge",
+        "mint sprig"
+      ],
+      "description": "Muddle fresh mint leaves and simple syrup in a glass. Add lime juice and white rum. Fill the glass with ice and top with club soda. Garnish with a lime wedge and a sprig of mint. Stir and enjoy."
+    },
+    {
+      "name": "Jagerbomb Shot",
+      "type": "shot",
+      "liquors": {
+        "Jägermeister": "1 shot"
+      },
+      "mixers": {
+        "Energy Drink": "1 glass (chased)"
+      },
+      "garnish": [
+        "None"
+      ],
+      "description": "Drop a shot of Jägermeister into a glass of energy drink, and consume quickly for an energizing experience.",
+      "id": 5
+    },
+    {
+      "name": "Lemon Drop Shot",
+      "type": "shot",
+      "liquors": {
+        "Vodka": "1 shot"
+      },
+      "mixers": {
+        "Lemon Juice": "1 splash",
+        "Simple Syrup": "1 splash"
+      },
+      "garnish": [
+        "Sugar rim",
+        "Lemon twist"
+      ],
+      "description": "Dip the rim of the shot glass in sugar. Mix vodka, lemon juice, and simple syrup in a shaker with ice. Strain into the sugar-rimmed glass. Garnish with a lemon twist and enjoy.",
+      "id": 6
+    },
+    {
+      "name": "Green Tea Shot",
+      "type": "shot",
+      "liquors": {
+        "Jameson Irish Whiskey": "1/2 shot",
+        "Peach Schnapps": "1/2 shot"
+      },
+      "mixers": {
+        "Sour Mix": "1 splash"
+      },
+      "garnish": [],
+      "description": "Mix Jameson Irish Whiskey and Peach Schnapps in a shaker with ice. Add a splash of sour mix and shake. Strain into a shot glass. It's called 'Green Tea' due to its color, not its flavor!",
+      "id": 7
+    },
+    {
+      "name": "Motor Oil Shot",
+      "type": "shot",
+      "liquors": {
+        "Peppermint Schnapps": "1/2 shot",
+        "Jägermeister": "1/2 shot"
+      },
+      "description": "Layer Peppermint Schnapps and Jägermeister in a shot glass. The combination creates a visually striking effect resembling motor oil. Shoot it responsibly!",
+      "id": 8
+    },
+    {
+      "name": "Alligator Shot",
+      "type": "shot",
+      "liquors": {
+        "Melon Liqueur": "1/2 shot",
+        "Sour Apple Schnapps": "1/2 shot"
+      },
+      "mixers": [],
+      "garnish": [],
+      "description": "Layer Melon Liqueur and Sour Apple Schnapps in a shot glass. The two layers create a unique visual effect resembling an alligator's coloration. Enjoy this fun shot!",
+      "id": 9
+    }
+  ]
 }
