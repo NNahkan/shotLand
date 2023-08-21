@@ -11,7 +11,7 @@ interface SingleDrinkProps {
 
 const SingleDrink: React.FC<SingleDrinkProps> = ({ item }) => {
 	const [openModel, setOpenModel] = useState<boolean>(false)
-	const juiceList = Object.keys(item.juices);
+	const juiceList = item.juices && Object.keys(item.juices);
 	const liquorList = Object.keys(item.liquors);
 	const otherList = item.other && Object.keys(item.other)
 
@@ -23,7 +23,7 @@ const SingleDrink: React.FC<SingleDrinkProps> = ({ item }) => {
 					{liquorList.map((name) => <span>{name} : {item.liquors[name]}   </span>)}
 				</div>
 				<div>
-					{juiceList.map((name) => <span>{name} : {item.juices[name]}   </span>)}
+					{item.juices && juiceList.map((name) => <span>{name} : {item.juices[name]}   </span>)}
 				</div>
 				{item.other && <div>
 					{otherList.map((name) => <span>{name} : {item.other[name]}   </span>)}

@@ -80,7 +80,7 @@
       "liquors": {
         "Jägermeister": "1 shot"
       },
-      "mixers": {
+      "other": {
         "Energy Drink": "1 glass (chased)"
       },
       "garnish": [
@@ -95,7 +95,7 @@
       "liquors": {
         "Vodka": "1 shot"
       },
-      "mixers": {
+      "other": {
         "Lemon Juice": "1 splash",
         "Simple Syrup": "1 splash"
       },
@@ -113,7 +113,7 @@
         "Jameson Irish Whiskey": "1/2 shot",
         "Peach Schnapps": "1/2 shot"
       },
-      "mixers": {
+      "other": {
         "Sour Mix": "1 splash"
       },
       "garnish": [],
@@ -137,7 +137,7 @@
         "Melon Liqueur": "1/2 shot",
         "Sour Apple Schnapps": "1/2 shot"
       },
-      "mixers": [],
+      "other": [],
       "garnish": [],
       "description": "Layer Melon Liqueur and Sour Apple Schnapps in a shot glass. The two layers create a unique visual effect resembling an alligator's coloration. Enjoy this fun shot!",
       "id": 9

@@ -16,7 +16,7 @@ const ModalUp: React.FC<ModalUpProps> = ({ item, closeModel, openModel, liquorLi
 		e.target.className === "overlay" && closeModel(false)
 	}
 
-	const { name, liquors, juices, garnish, description, other = {} } = item;
+	const { name, liquors, juices = {}, garnish, description, other = {} } = item;
 
 
 	return (
@@ -31,7 +31,7 @@ const ModalUp: React.FC<ModalUpProps> = ({ item, closeModel, openModel, liquorLi
 							{liquorList.map((liquor) =>
 								<li>{liquors[liquor]} : {liquor} </li>
 							)}
-							{juiceList.map((juice) =>
+							{juiceList && juiceList.map((juice) =>
 								<li>{juices[juice]} : {juice} </li>
 							)}
 						</div>
