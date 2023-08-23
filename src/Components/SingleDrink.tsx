@@ -12,8 +12,8 @@ interface SingleDrinkProps {
 const SingleDrink: React.FC<SingleDrinkProps> = ({ item }) => {
 	const [openModel, setOpenModel] = useState<boolean>(false)
 	const juiceList = item.juices && Object.keys(item.juices);
+	const otherList = item.other && Object.keys(item.other);
 	const liquorList = Object.keys(item.liquors);
-	const otherList = item.other && Object.keys(item.other)
 
 	return (
 		<>

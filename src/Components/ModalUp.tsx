@@ -7,7 +7,7 @@ interface ModalUpProps {
 	openModel: boolean;
 	otherList: string[] | undefined;
 	liquorList: string[];
-	juiceList: string[];
+	juiceList: string[] | undefined;
 }
 
 const ModalUp: React.FC<ModalUpProps> = ({ item, closeModel, openModel, liquorList, juiceList, otherList }) => {
