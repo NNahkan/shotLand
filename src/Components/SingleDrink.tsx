@@ -31,6 +31,7 @@ const SingleDrink: React.FC<SingleDrinkProps> = ({ item }) => {
 
 			</div >
 			{openModel && <ModalUp
+				key={item.name}
 				liquorList={liquorList}
 				juiceList={juiceList}
 				openModel={openModel}
